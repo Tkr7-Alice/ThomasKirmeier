@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicando em botões</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }       
+    </style>
+</head>
+<body>
+    
+    <p>Clicando em botões</p>
+    <button onclick="clicar(this)">Botão 1</button>
+    <button onclick="clicar(this)">Botão 2</button>
+    <button onclick="clicar(this)">Botão 3</button>
+    <button onclick="clicar(this)">Botão 4</button>
+    <button onclick="clicar(this)">Botão 5</button>
+
+</body>
+<script>
+
+    function clicar(botao){
+        alert(`Você clicou no botão: ${botao.innerText}`);
+    }
+        
+</script>
+</html>
